@@ -1,14 +1,14 @@
 module.exports = {
   //-- SITE SETTINGS -----
-  author: "@konstantinmuenster",
-  siteTitle: "Gatsby Starter Portfolio Minimal",
-  siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
+  author: "@ninalei",
+  siteTitle: "Nina Lei",
+  siteShortTitle: "Nina Lei", // Used as logo text in header, footer, and splash screen
   siteDescription:
-    "A modern one-page portfolio with a clean yet expressive design.",
-  siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+    "Nina Lei portfolio website.",
+  siteUrl: "https://nlei1.github.io/",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
-  seoTitleSuffix: "Portfolio Minimal", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
+  seoTitleSuffix: "Nina Lei", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
   useCookieBar: false, // If you use Google Analytics and want to be GDPR-compliant, set it to true
   googleAnalyticsTrackingId: "", // e.g. UA-XXXXXX-X
 
@@ -16,41 +16,39 @@ module.exports = {
   colors: {
     lightTheme: {
       primary: "#000000",
-      secondary: "#FFF4D9",
-      tertiary: "#F2F2F2",
+      secondary: "#fbe983",
+      tertiary: "#fbe983",
       text: "#000000",
       subtext: "#555555",
-      background: "#FFFFFF",
+      background: "#fef6e4",
       card: "#FFFFFF",
       scrollBar: "rgba(0, 0, 0, 0.5)",
       boxShadow: "rgba(0, 0, 0, 0.16)",
       boxShadowHover: "rgba(0, 0, 0, 0.32)",
     },
     darkTheme: {
-      primary: "#FAFAFA",
-      secondary: "#2A2926",
-      tertiary: "#252525",
+      primary: "#f5fbff",
+      secondary: "#5d6658",
+      tertiary: "#5d6658",
       text: "rgba(255, 255, 255, 0.87)",
       subtext: "#AAAAAA",
-      background: "#121212",
-      card: "#1C1C1C",
+      background: "#152642",
+      card: "#506680",
       scrollBar: "rgba(255, 255, 255, 0.5)",
       boxShadow: "rgba(0, 0, 0, 0.16)",
       boxShadowHover: "rgba(0, 0, 0, 0.32)",
     },
   },
   fonts: {
-    primary: "Roboto, Arial, sans-serif",
+    primary: "Helvetica, Arial, sans-serif",
   },
 
   //-- ARTICLES SECTION SETTINGS -----
   // You can create your own Medium feed with this rss to json converter: https://rss2json.com/
   // To access your Medium RSS feed, just replace this url with your username: https://medium.com/feed/@{yourname}
-  mediumRssFeed:
-    "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40konstantinmuenster",
   // rssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss",
 
-  shownArticles: 3,
+
 
   //-- SOCIAL MEDIA SETTINGS -----
   // There are icons available for the following platforms:
@@ -58,48 +56,45 @@ module.exports = {
   socialMedia: [
     {
       name: "Linkedin",
-      url: "https://www.linkedin.com/in/konstantin-muenster/",
+      url: "https://www.linkedin.com/in/nl-nina-lei/",
     },
-    {
-      name: "Medium",
-      url: "https://konstantinmuenster.medium.com/",
-    },
+    // {
+    //   name: "Medium",
+    //   url: "https://konstantinmuenster.medium.com/",
+    // },
     {
       name: "Github",
       url:
-        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
-    },
-    {
-      name: "Behance",
-      url: "https://www.behance.net/konstanmnster",
+        "https://github.com/nlei1",
     },
     // {
-    //   name: "Mail",
-    //   url: "mailto:mail@konstantin.digital",
+    //   name: "Behance",
+    //   url: "https://www.behance.net/konstanmnster",
     // },
+    {
+      name: "Mail",
+      url: "mailto:nlei@college.harvard.edu",
+    },
   ],
 
   //-- NAVIGATION SETTINGS -----
   navLinks: {
     menu: [
       {
-        name: "About Me",
+        name: "About Me 👋",
         url: "/#about",
       },
       {
-        name: "Features",
+        name: "Projects and Initiatives 🚢",
         url: "/#projects",
       },
-      {
-        name: "Contact",
-        url: "/#contact",
-      },
+
     ],
     button: {
-      useFileName: true,
-      name: "Resume",
-      fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
-      url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
+      useFileName: false,
+      name: "Contact ☎️",
+      //fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
+      url: "/#contact", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
   footerLinks: [

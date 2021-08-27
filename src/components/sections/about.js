@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { motion, useAnimation } from "framer-motion"
+import Underlining from "../../styles/underlining"
 
 import { useOnScreen } from "../../hooks/"
 import Context from "../../context/"
@@ -36,6 +37,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       justify-content: center;
     }
     .text-content {
+      font-family: "Georgia", Times, serif;
       width: 100%;
       max-width: 31.25rem;
     }

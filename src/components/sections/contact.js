@@ -27,6 +27,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
     height: 100%;
     display: inline-block;
     p {
+      font-family: "Georgia", Times, serif;
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -52,6 +53,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
         }
       }
       .details {
+        font-family: "Georgia", Times, serif;
         font-size: 1.125rem;
         line-height: 2rem;
       }

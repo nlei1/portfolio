@@ -95,6 +95,8 @@ const StyledInterests = styled.div`
   }
 
   .interest {
+
+    font-size: 14px;
     width: 15.625rem;
     height: 3rem;
     display: flex;
@@ -103,7 +105,7 @@ const StyledInterests = styled.div`
     padding: 1rem;
     border: 0.125rem solid ${({ theme }) => theme.colors.primary};
     border-radius: ${({ theme }) => theme.borderRadius};
-    background: ${({ theme }) => theme.colors.card};
+    background: ${({ theme }) => theme.colors.background};
     .icon {
       margin-right: 0.5rem;
     }

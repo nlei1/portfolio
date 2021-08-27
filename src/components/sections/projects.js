@@ -130,6 +130,10 @@ const StyledProject = styled(motion.div)`
     flex-direction: ${({ position }) =>
       position % 2 !== 0 ? "row" : "row-reverse"};
   }
+  p {
+    font-family: "Georgia", Times, serif;
+
+  }
   .details {
     width: 100%;
     max-width: 25rem;
@@ -153,6 +157,7 @@ const StyledProject = styled(motion.div)`
       font-weight: 700;
     }
     .tags {
+      font-family: Helvetica;
       display: flex;
       flex-wrap: wrap;
       margin-top: 1.5rem;
@@ -298,23 +303,7 @@ const Projects = ({ content }) => {
                       ))}
                     </div>
                     <div className="links">
-                      {frontmatter.github && (
-                        <a
-                          href={frontmatter.github}
-                          target="_blank"
-                          rel="nofollow noopener noreferrer"
-                          aria-label="External Link"
-                        >
-                          <Icon
-                            name="github"
-                            color={
-                              darkMode
-                                ? darkTheme.colors.subtext
-                                : lightTheme.colors.subtext
-                            }
-                          />
-                        </a>
-                      )}
+                      
                       {frontmatter.external && (
                         <a
                           href={frontmatter.external}
@@ -360,9 +349,7 @@ const Projects = ({ content }) => {
           rel="nofollow noopener noreferrer"
           aria-label="External Link"
         >
-          <Button type="button" textAlign="center" center>
-            {sectionDetails.frontmatter.buttonText}
-          </Button>
+  
         </motion.a>
       )}
     </StyledSection>

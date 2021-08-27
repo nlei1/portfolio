@@ -56,6 +56,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
     .description {
       font-size: 1.125rem;
       margin-bottom: 2rem;
+      font-family: "Georgia", Times, serif;
     }
   }
 `
@@ -91,7 +92,7 @@ const Hero = ({ content }) => {
         })
         // Animate underlining to hover state
         await uControls.start({
-          boxShadow: `inset 0 -2rem 0 ${
+          boxShadow: `inset 0 -1rem 0 ${
             darkMode ? darkTheme.colors.secondary : lightTheme.colors.secondary
           }`,
           transition: { delay: 0.4, ease: "circOut" },
@@ -133,9 +134,6 @@ const Hero = ({ content }) => {
           <div className="description">
             <MDXRenderer>{body}</MDXRenderer>
           </div>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>
-          <Social fontSize=".95rem" padding=".3rem 1.25rem" width="auto" />
         </motion.div>
       </StyledContentWrapper>
     </StyledSection>
